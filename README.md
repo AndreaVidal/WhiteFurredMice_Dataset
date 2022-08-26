@@ -1,4 +1,4 @@
-# Furred Mice Dataset
+# White Furred Mice Dataset
 
 ## Face	detection	and	Grimace	Scale	Prediction	of	White	Furred	Mice
 
