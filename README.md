@@ -24,38 +24,64 @@ is	possible	to	differentiate	among	the	pain	scale	of	the	mice
 ## Dataset
 
 ### Sub-dataset 1
-- Annotation of bounding	boxes	around	the	mouse	 face.
+<img src="https://github.com/AndreaVidal/WhiteFurredMice_Dataset/blob/main/Images/FaceDetection_example.png?raw" width="192" height="108">
+
+- Annotation of bounding	boxes	around	the	mouse	 face. 
 ```
   "animalImage_1.png": [
-          {
-              "AnimalNumber": "1",
-              "Boundingbox": {
-                  "x": "447",
-                  "y": "341",
-                  "w": "945",
-                  "h": "958"
-              }
-          }
-      ],
-```
-### Sub-dataset 2
-- Grimace scale annotation and bounding	box	around	the eyes.
-```
-"animalImage_1.png": [
         {
             "AnimalNumber": "1",
-            "GrimaceScale": "0",
             "Boundingbox": {
-                "x": "233",
-                "y": "370",
-                "w": "269",
-                "h": "106"
+                "x": "447",
+                "y": "341",
+                "w": "945",
+                "h": "958"
             }
         }
     ],
 ```
 
 
+### Sub-dataset 2
+<img src="https://github.com/AndreaVidal/WhiteFurredMice_Dataset/blob/main/Images/EyeRegionDetection_example.png?raw" width="100" height="100">
+
+- Grimace scale annotation and bounding	box	around	the eyes. 
+```
+"animalImage_1.png": [
+        {
+            "AnimalNumber": "1",
+            "GrimaceScale": "[0 0 0 1 0]",
+            "Boundingbox": {
+                "x": "233",
+                "y": "370",
+                "w": "502",
+                "h": "476"
+            }
+        }
+    ],
+```
+
+## Access to the data
+```
+import json
+
+#Load data
+json_file = open('file_name.json')
+data = json.load(json_file)
+json_file.close()
+
+#Keys
+keys_data = list(data.keys()) #Name of the image: image_name.png
+
+#Access
+data[keys_data[0]][0] #"0" is an example, it can be any number between 0 and len(keys_data)
+data[keys_data[0]][0]['AnimalNumber']
+data[keys_data[0]][0]['Boundingbox']['x']
+data[keys_data[0]][0]['Boundingbox']['y']
+data[keys_data[0]][0]['Boundingbox']['w']
+data[keys_data[0]][0]['Boundingbox']['h']
+
+```
 
 
 
