@@ -26,7 +26,7 @@ is	possible	to	differentiate	among	the	pain	scale	of	the	mice
 ### Sub-dataset 1
 <img src="https://github.com/AndreaVidal/WhiteFurredMice_Dataset/blob/main/Images/FaceDetection_example.png?raw" width="192" height="108">
 
-- Annotation of bounding	boxes	around	the	mouse	 face. 
+- Annotation of the bounding	box	around	the	mouse	 face. 
 ```
   "animalImage_1.png": [
         {
