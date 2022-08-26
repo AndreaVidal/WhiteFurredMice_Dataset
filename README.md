@@ -88,8 +88,8 @@ data[keys_data[0]][0]['Boundingbox']['h']
 from PIL import Image, ImageDraw
 
 image = Image.open(path_image)
-shape = [(x,y), (w,h)]
 img = ImageDraw.Draw(image)
+shape = [(x,y), (w,h)]
 img.rectangle(shape,width=10, outline ="green")
 image.show()
 
