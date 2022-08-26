@@ -83,8 +83,17 @@ data[keys_data[0]][0]['Boundingbox']['h']
 
 ```
 
+## Visualize bounding box
+```
+from PIL import Image, ImageDraw
 
+image = Image.open(path_image)
+shape = [(x,y), (w,h)]
+img = ImageDraw.Draw(image)
+img.rectangle(shape,width=10, outline ="green")
+image.show()
 
+```
 ## Reference
 If you use this corpus, please cite the following paper:
 
