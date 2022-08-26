@@ -1,3 +1,3 @@
 ## Download database
 
-The link for downloading the images of the dataset is [Database link](www.box.com)
+The link for downloading the images of the dataset is [Database link](https://www.google.com)
