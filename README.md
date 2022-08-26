@@ -47,10 +47,10 @@ is	possible	to	differentiate	among	the	pain	scale	of	the	mice
 
 - Grimace scale annotation and bounding	box	around	the eyes. 
 ```
-"animalImage_1.png": [
+ "animalImage_1.png": [
         {
             "AnimalNumber": "1",
-            "GrimaceScale": "[0 0 0 1 0]",
+            "GrimaceScale": "0",
             "Boundingbox": {
                 "x": "233",
                 "y": "370",
